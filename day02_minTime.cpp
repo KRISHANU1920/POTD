@@ -19,3 +19,10 @@ long long minTime(long long a[], long long b[], long long n)
 
         return min(Time1, Time2);
     }
+
+    /*
+
+    Time Complexity: O(N)
+    Space Complexity: O(1)
+
+    */

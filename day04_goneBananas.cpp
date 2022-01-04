@@ -86,6 +86,6 @@ int main() {
 /*
 
 Time Complexity: O(T+Nlog(log(N)))
-Space Complexity: O(N)
+Space Complexity: O(Size)
 
 */

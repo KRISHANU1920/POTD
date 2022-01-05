@@ -11,7 +11,7 @@ int gcd(int a, int b)
 
 int main() 
 { 
-	ios::sync_with_stdio(0);
+    ios::sync_with_stdio(0);
     cin.tie(0);
     int T;
 	cin >> T;
@@ -26,7 +26,7 @@ int main()
 	    for(int i=1; i<N; i++)
 	        ans = gcd(ans, A[i]);
 	    cout << ans << "\n";
-        delete [] A;
+            delete [] A;
 	}
 	return 0;
 }

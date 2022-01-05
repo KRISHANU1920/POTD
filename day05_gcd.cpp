@@ -33,7 +33,7 @@ int main()
 
 /*
 
-Time Complexity: O(T.N.log(max(A[])))
+Time Complexity: O(T.N.log(min(ans, A[i])))
 Space Complexity: O(1)
 
 */

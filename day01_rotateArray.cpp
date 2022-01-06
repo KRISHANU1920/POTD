@@ -1,4 +1,5 @@
-//Given an unsorted array arr[] of size N, rotate it by D elements (clockwise).
+// Given an unsorted array arr[] of size N, rotate it by D elements (clockwise).
+// Question Link: https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements/0?fbclid=IwAR2QNU5_Jc1HscbZUxxETdW8qC8-0SKumVIWcRt3SE4EQNN_EDp7vVJY3ys
 
 #include <bits/stdc++.h>
 using namespace std;

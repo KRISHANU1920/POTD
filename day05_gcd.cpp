@@ -1,3 +1,5 @@
+// Question Link: https://www.codechef.com/problems/AMSGAME1
+
 #include <bits/stdc++.h>
 using namespace std;
 

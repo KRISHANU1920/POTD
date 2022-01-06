@@ -1,3 +1,5 @@
+// Question Link: https://practice.geeksforgeeks.org/problems/a-guy-with-a-mental-problem1604/1
+
 long long minTime(long long a[], long long b[], long long n)
     {
         long long i, even_A=0, odd_A=0, even_B=0, odd_B=0;

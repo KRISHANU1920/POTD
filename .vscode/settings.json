@@ -19,6 +19,7 @@
         "thread": "cpp",
         "regex": "cpp",
         "tuple": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "iostream": "cpp"
     }
 }

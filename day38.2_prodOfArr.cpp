@@ -35,4 +35,5 @@ vector<int> productExceptSelf(vector<int>& nums)
 Time Complexity: O(N)
 Space Complexity: O(1)
 
+Same for both the approaches
 */

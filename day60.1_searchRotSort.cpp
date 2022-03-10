@@ -1,59 +1,28 @@
-// Question Link : https://practice.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1
+// Question Link : https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 
-Node* segregate(Node *head) 
+int findMin(vector<int>& nums) 
 {
-    if(!head || !(head -> next))
-        return head;
+    int left = 0, right = size(nums)-1;
     
-    // create dummy nodes and it's pointers
-    Node *zeroHead = new Node(-1);
-    Node *zeroTail = zeroHead;
-    Node *oneHead = new Node(-1);
-    Node *oneTail = oneHead;
-    Node *twoHead = new Node(-1);
-    Node *twoTail = twoHead;
-    
-    // segregating into three lists
-    Node *curr = head;
-    while(curr != NULL)
+    while(left < right)
     {
-        if(curr -> data == 0) {
-            zeroTail -> next = curr;
-            zeroTail = curr;
-        }
-        else if(curr -> data == 1) {
-            oneTail -> next = curr;
-            oneTail = curr;
-        }
-        else if(curr -> data == 2) {
-            twoTail -> next = curr;
-            twoTail = curr;
-        }
-        curr = curr -> next;
+        int mid = left + (right - left)/2;
+        
+        if(nums[0] <= nums[mid])
+            left = mid + 1;
+        else
+            right = mid;
     }
     
-    // merging three lists into one
-    
-    if(oneHead -> next != NULL)
-        zeroTail -> next = oneHead -> next;
+    if(nums[0] < nums[left])
+        return nums[0];
     else
-        zeroTail -> next = twoHead -> next;
-        
-    oneTail -> next = twoHead -> next;
-    twoTail -> next = NULL;
-
-    // updating head
-    head = zeroHead -> next;
-    
-    // deleting dummy nodes
-    delete zeroHead;
-    delete oneHead;
-    delete twoHead;
-    
-    return head;
+        return nums[left];
 }
 
 /*
-Time Complexity: O(N)
+
+Time Complexity: O(log(N))
 Space Complexity: O(1)
+
 */

@@ -23,7 +23,8 @@ vector<int> nextGreaterElements(vector<int>& nums)
 
 /*
 
-Time Complexity: O()
-Space Complexity: O()
+Time Complexity: O(N) - Only two traversals of the nums array are done. 
+                        Further, atmost 2n elements are pushed and popped from the stack
+Space Complexity: O(N)
 
 */
